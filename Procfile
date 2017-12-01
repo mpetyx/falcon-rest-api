@@ -1,1 +1,1 @@
-web: gunicorn app.main:application --log-file -
+web: gunicorn app.main:application --log-file --worker-class=gevent
